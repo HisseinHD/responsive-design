@@ -1,0 +1,76 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .item1 {
+        grid-area: 1 / span 6;
+        background-color: lightblue;
+    }
+    .item2 {
+        grid-area: 2 / span 4;
+        background-color: rgb(222, 231, 222);
+    }
+    .item3 {
+        grid-area: 3 / span 3;
+        background-color: lightyellow;
+    }
+    .item4 {
+        grid-area: 4 / span 2;
+        background-color: lightgray;
+    }
+}
+
+/* Landscape orientation */
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Medium devices (tablets, 601px and up) */
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+    div.example {
+        font-size: 80px;
+    }
+    .item1, .item2, .item3, .item4 {
+        grid-area: auto;
+        background-color: lightgreen;
+    }
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightcoral;
+    }
+    div.example {
+        font-size: 40px;
+    }
+    .item1, .item2, .item3, .item4 {
+        grid-area: auto;
+        background-color: lightpink;
+    }
+}
+
+/* Very small devices (extra small phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: lightcoral; /* Conserve la couleur */
+    }
+    div.example {
+        font-size: 30px; /* Réduction supplémentaire de la taille de police */
+    }
+    .item1, .item2, .item3, .item4 {
+        grid-area: auto;
+        background-color: lightpink; /* Conserve la couleur */
+    }
+}
+
+/* Default styles for all devices */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+div.example {
+    text-align: center;
+    padding: 20px;
+}
