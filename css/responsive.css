@@ -1,199 +1,72 @@
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .item1 {
-        grid-area: 1 / span 6;
-        background-color: lightblue;
+/* pour S Ecrans(320pxS)*/
+@media screen and (min-width: 320px) {
+    .features{
+      
+      padding: 1.3rem;
+      flex-direction:column;
+      flex-wrap: wrap;
+      background-color:rgb(252, 253, 253);
     }
-    .item2 {
-        grid-area: 2 / span 4;
-        background-color: rgb(222, 231, 222);
-    }
-    .item3 {
-        grid-area: 3 / span 3;
-        background-color: lightyellow;
-    }
-    .item4 {
-        grid-area: 4 / span 2;
-        background-color: lightgray;
-    }
+}
 
-    .site-header {
-        text-align: left;
-        padding: 20px 40px;
+/* pour L mobile de (375px)*/
+@media screen and (min-width: 375px) {
+    .feature{
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: 1.1rem;
     }
+         .features {
+       background-color: rgb(252, 253, 253);
+}
+}
 
-    .site-nav ul {
-        justify-content: flex-end;
-    }
-
-    .site-main {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
+  /* pour M mobile (425px) */
+  @media screen and (min-width: 425px) {
     .features {
-        grid-template-columns: repeat(3, 1fr);
+      flex-direction: row;
+      flex-wrap: wrap;
+      grid-template-rows: auto 1fr auto ;
+      background-color: rgb(252, 253, 253);
     }
 
     .feature {
-        font-size: 1.1rem;
+      flex: 1 1 calc(50% -1rem);
     }
-}
+  }
 
-/* Landscape orientation */
-@media only screen and (orientation: landscape) {
-    body {
-        background-color: rgb(243, 246, 247);
+  /* laptop avec écran(1024px)*/
+  @media screen and (min-width: 1024px) {
+    .site.header{
+     padding: 2rem;
+     flex: auto;
     }
-}
-
-/* Medium devices (tablets, 601px and up) */
-@media only screen and (min-width: 601px) and (max-width: 1199px) {
-    div.example {
-        font-size: 80px;
+    .site-nav ul{
+      gap: 2rem;
     }
-    .item1, .item2, .item3, .item4 {
-        grid-area: auto;
-        background-color: rgb(246, 248, 246);
+    .features{
+      font-size: 1.1em;
+      background-color: rgb(252, 253, 253);
     }
+  }
 
-    .site-header h1 {
-        font-size: 2rem;
+  /* laptop moyen (768px)*/
+  @media screen and (min-width:768px) {
+    .features{
+     background-color:rgb(252, 253, 253);
+      flex-direction: row;
+      gap: 1.5rem;
+    justify-content: space-around;
+    margin-left: -10%;
+      justify-content: space-around;
+      margin-left: -10%;
     }
+  }
 
-    .site-nav a {
-        font-size: 1rem;
-    }
-
-    .features {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .feature {
-        font-size: 1rem;
-    }
-}
-
-/* Small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: rgb(248, 247, 247);
-    }
-    div.example {
-        font-size: 40px;
-    }
-    .item1, .item2, .item3, .item4 {
-        grid-area: auto;
-        background-color: rgb(252, 250, 250);
-    }
-
-    .site-header h1 {
-        font-size: 1.5rem;
-    }
-
-    .site-nav a {
-        font-size: 0.9rem;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .feature {
-        font-size: 0.9rem;
-    }
-}
-
-/* Default styles for all devices */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-div.example {
-    text-align: center;
-    padding: 20px;
-}
-
-.site-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-
-.site-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.site-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.site-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.site-main {
-    padding: 20px;
-}
-
-.intro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.intro p {
-    font-size: 1rem;
-}
-
-.features {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.feature {
-    background-color: #f4f4f4;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-.site-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-    margin-top: 20px;
-}
-
-/* Extra large devices (1440px and up) */
-@media only screen and (min-width: 1440px) {
+  /* laptop (1440px)*/
+  @media screen and (min-width: 1440px) {
+         .features {
+   background-color: rgb(252, 253, 253);
     
-    .site-header h1 {
-        font-size: 2.5rem;
-    }
-
-    .site-nav a {
-        font-size: 1.2rem;
-    }
-
-    .features {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    /**.feature {
-        font-size: 1.2rem;
-    }*/
-    
-}
+  }
+ }
