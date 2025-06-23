@@ -6,7 +6,7 @@ body {
 .site-header,
 .site-footer {
   background: #333;
-  color: #fff;
+  color:#f4f4f4 ;
   text-align: center;
   padding: 1rem;
 }
@@ -32,41 +32,4 @@ body {
   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
-}
-
-/* Tablet breakpoint (>= 768px) */
-@media (min-width: 768px) {
-  .features {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .feature {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
-}
-
-/* Laptop breakpoint (>= 1024px) */
-@media (min-width: 1024px) {
-  .features {
-    gap: 2rem;
-  }
-  .feature {
-    flex: 1 1 30%;
-    max-width: 30%;
-  }
-}
-
-/* Laptop L breakpoint (>= 1440px) */
-@media (min-width: 1440px) {
-  .features {
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 2.5rem;
-  }
-  .feature {
-    flex: 1 1 22%;
-    max-width: 22%;
-  }
 }
